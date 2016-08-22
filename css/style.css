@@ -1,0 +1,36 @@
+/*-----GENERAL TAGS-----*/
+
+body {
+    /*color: #2d2d30;*/
+    /*background-color: lightgray;*/
+    text-align: center;
+}
+
+header {
+	background-color: #555;
+	height: 10vh;
+	color: white;
+}
+
+footer {
+	background-color: #555;
+	height: 5vh;
+	color: white;
+}
+
+.sidenav {
+	background-color: lightgray;
+	height: 85vh;
+}
+
+#main {
+	height: 85vh;
+}
+
+select {
+	width: 20px;
+}
+
+li {
+	text-align: left;
+}

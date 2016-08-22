@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Caesar Cipher</title>
+	<!-- meta -->
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<!-- CSS -->
+	<link rel='stylesheet' href='css/bootstrap.min.css' >
+	<link rel='stylesheet' href='css/font-awesome.min.css'>
+	<link rel='stylesheet' href='css/style.css' >
+	<!-- JS -->
+	<script src='js/jQuery.js'></script>
+	<script src='js/bootstrap.min.js'></script>
+	<script src='js/site.js'></script>
+</head>
+<body>
+	<header class='container-fluid text-center'>
+		<h1>Ceasar Cipher</h1>
+	</header>
+
+	<section class='container-fluid text-center'>
+		<div class='row content'>
+		    <div class='col-sm-3 sidenav'>
+				<p><a target='_blank' href='https://en.wikipedia.org/wiki/Caesar_cipher'>What is the Caesar Cipher?</a></p>
+				<hr>
+				<p><a target='_blank' href='https://brandonDeen.github.io'>Who is the cool guy that made this page?</a></p>
+				<hr>
+				<p><h4>How to Encrypt</h4>
+					<ol>
+						<li>Pick a plain text message you want to encrypt</li>
+						<li>Select a cipher value</li>
+						<li>Select Encrypt</li>
+						<li>Click Go</li>
+						<li>Your Encrypted message will appear in the section below the form</li>
+					</ol>
+				</p>
+				<hr>
+				<p><h4>How to Decrypt</h4>
+					<ol>
+						<li>Paste your decrypted message in the text area</li>
+						<li>Select the cipher value used to encrypt the message</li>
+						<li>Select Decrypt</li>
+						<li>Click Go</li>
+						<li>Your Decrypted message will appear in the section below the form</li>
+					</ol>
+				</p>
+		    </div>
+
+			<div class='col-sm-9 text-left' id='main'>
+				<br>
+				<label for='message'>Enter your message: <textarea class='form-control' rows='5' cols='50' id='message' placeholder='Some random message'></textarea></label>
+				<hr>
+				<label for='shift'>Enter your cipher: <input type='number' min='1' max='256' value='1' id='shift'></label>
+				<hr>
+				<div class='input-group col-sm-6'>
+   					<select class='form-control' id='encrypt-decrypt'>
+						<option value='encrypt'>Encrypt</option>
+						<option value='decrypt'>Decrypt</option>
+					</select>
+	   				<span class='input-group-btn'>
+	        			<button id='submit' class='btn btn-primary' type='button'>Go!</button>
+	   				</span>
+				</div>
+				<hr>
+				<div id='results'></div>
+			</div>
+		</div>
+	</section>
+
+	<footer class='container-fluid text-center'>Made by Brandon Deen 
+		<a target='_blank' href='http://github.com/brandonDeen/CeasarCipher'><i class='fa fa-github'></i></a>
+	</footer>
+</body>	
+</html>
